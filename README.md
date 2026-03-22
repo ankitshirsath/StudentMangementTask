@@ -10,7 +10,7 @@ This is a comprehensive web application built with the **ASP.NET MVC** architect
 ### 📝 Student Management (CRUD Operations)
 The core of the system allows for full data lifecycle management:
 * **Insert Data:** A user-friendly registration form to add new students. It captures essential details like **Name, Date of Birth (DOB), and Gender**.
-* **Update/Delete:** Provides the flexibility to modify existing student information or remove records directly from the report view, ensuring data accuracy.
+* **Update/Delete:** Provides the flexibility to modify existing student information or remove records directly from the report view.
 
 ### 👨‍🏫 Teacher-Student Mapping
 * **Relational Structure:** Features a dropdown-based teacher selection system.
@@ -21,9 +21,8 @@ The core of the system allows for full data lifecycle management:
 ## 📸 Project Preview
 
 | Student Registration | Student Report (CRUD) |
-| :---: | :---: |
-| ![Register](image_9601ad.png) | ![Report](image_95fec5.png) |
-
+| :---: | :---: | 
+| ![Register](Student%20Insert%20Form%20Screenshot.png) | ![Report](Student%20Report%20Screenshot%20.png) |
 ---
 
 ## 💻 Tech Stack
