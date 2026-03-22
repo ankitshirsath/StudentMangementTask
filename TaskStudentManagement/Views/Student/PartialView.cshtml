@@ -1,0 +1,51 @@
+﻿@model TaskStudentManagement.Models.Student_model
+
+@using (Html.BeginForm("SaveOrUpdate", "Student", FormMethod.Post))
+{
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Frist Name</label>
+                @Html.HiddenFor(s => s.id)
+
+                @Html.TextBoxFor(s => s.FristName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Last Name</label>
+                @Html.TextBoxFor(s => s.LastName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Date of Birth</label>
+                @Html.TextBoxFor(s => s.DateOfBirth, new { type = "date", @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group ">
+                <label class="small mb-1">Teacher <small style="color:red">*</small></label>
+                @Html.DropDownListFor(m => m.Teacher_id, new SelectList(ViewBag.Teacher, "Value", "Text"), new { @class = "form-control  text-uppercase" })
+                @Html.ValidationMessageFor(m => m.Teacher_id, "", new { @class = "text-danger  " })
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Gender</label>
+                Male
+                @Html.RadioButtonFor(m => m.Gender, "Male")
+                Female
+                @Html.RadioButtonFor(m => m.Gender, "Female")
+            </div>
+        </div>
+
+
+    </div>
+    <div class="form-group mt-4 mb-0 form-actions">
+        <button type="submit" class="btn btn-dark" id="btnsubmit" tabindex="18"> Save Record </button>
+    </div>
+}
+

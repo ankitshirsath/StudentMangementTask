@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TaskStudentManagement.Data_Context.sp_student_Result>
+@{ 
+    Layout = null;
+}
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Student_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Teacher_Name)
+        </th>
+        <th>Edit/Delete</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.HiddenFor(modelItem => item.id)
+
+            @Html.DisplayFor(modelItem => item.Student_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teacher_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditData", new { id=item.id }) |
+            @Html.ActionLink("Delete", "DeleteData", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
