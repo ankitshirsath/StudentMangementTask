@@ -19,11 +19,10 @@ The core of the system allows for full data lifecycle management:
 ---
 
 ## 📸 Project Preview
-
-| Student Registration | Student Report (CRUD) |
-| :---: | :---: | 
-| ![Register](Student%20Insert%20Form%20Screenshot.png) |
-![Report](Student%20Report%20Screenshot%20.png) |
+* **Student Registration :** 
+![Register](Student%20Insert%20Form%20Screenshot.png)
+* **Student Report (CRUD) :** 
+![Report](Student%20Report%20Screenshot%20.png) 
 ---
 
 ## 💻 Tech Stack
