@@ -22,7 +22,8 @@ The core of the system allows for full data lifecycle management:
 
 | Student Registration | Student Report (CRUD) |
 | :---: | :---: | 
-| ![Register](Student%20Insert%20Form%20Screenshot.png) | ![Report](Student%20Report%20Screenshot%20.png) |
+| ![Register](Student%20Insert%20Form%20Screenshot.png) |
+![Report](Student%20Report%20Screenshot%20.png) |
 ---
 
 ## 💻 Tech Stack
