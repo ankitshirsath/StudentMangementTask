@@ -26,7 +26,6 @@ The core of the system allows for full data lifecycle management:
 ---
 
 ## 💻 Tech Stack
-
 * **Backend:** C# .NET MVC
 * **ORM:** Entity Framework (EF)
 * **Database:** SQL Server
@@ -46,5 +45,3 @@ The core of the system allows for full data lifecycle management:
 
 ## 👤 Author
 **Ankit Shirsath** *.NET Full Stack Developer*
-
-
